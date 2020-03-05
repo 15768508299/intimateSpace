@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blove.space.mapper.SpaceUserMapper">
+  <resultMap id="BaseResultMap" type="com.blove.space.model.SpaceUser">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="username" jdbcType="CHAR" property="username" />
+    <result column="password" jdbcType="CHAR" property="password" />
+    <result column="nikename" jdbcType="VARCHAR" property="nikename" />
+    <result column="gender" jdbcType="CHAR" property="gender" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="imgUrl" jdbcType="VARCHAR" property="imgurl" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="useable" jdbcType="TINYINT" property="useable" />
+    <result column="createdAt" jdbcType="INTEGER" property="createdat" />
+    <result column="updatedAt" jdbcType="INTEGER" property="updatedat" />
+  </resultMap>
+
+</mapper>
