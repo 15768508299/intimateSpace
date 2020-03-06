@@ -40,7 +40,7 @@
         .jumbotron h1 {
             color: #fff;
             font-family: Rokkitt;
-            font-size: 8em;
+            font-size: 6em;
             font-weight: 200;
             text-shadow: 0.025em 0.025em 0.025em rgba(0, 0, 0, 0.8);
             visibility: hidden;
@@ -101,9 +101,10 @@
 <script src="../static/assets/jquery.lettering.js"></script>
 <script src="../static/assets/highlight.min.js"></script>
 <script src="../static/assets/jquery.textillate.js"></script>
+<script src="../static/js/DateUtits.js"></script>
 <div class="jumbotron" style="background: rgba(0,0,0,0);  position: absolute;  padding: 3em 0;text-align: center;color: #ffffff;left: 27%;">
     <div class="container">
-        <h1 class="glow in tlt">属于我们的空间</h1>
+        <h1 class="glow in tlt"  id="dayData"></h1>
         <p class="tlt" data-in-effect="bounceInDown">
             Love because you love
         </p>
@@ -295,6 +296,17 @@
 <!--</div>-->
 <script>
     $(function () {
+
+        function init(){
+            var sdate2 = today();
+            var datNum = datedifference("2020-02-08",sdate2); //认识天数
+            var datNum2 = datedifference("2020-02-14",sdate2); //在一起天数
+            console.log("相差天数",datNum);
+            document.getElementById("dayData").innerHTML = "我们在一起"+ datNum2  +"天啦";
+        }
+
+        init();
+
         $('.jumbotron h1')
             .fitText(0.6)   // 字体大小
             .textillate({ in: { effect: 'flipInY' }}); //动画
