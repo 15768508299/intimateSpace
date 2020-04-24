@@ -3,10 +3,12 @@ package com.blove.space.service;
 import com.blove.space.mapper.SpaceUserMapper;
 import com.blove.space.model.SpaceUser;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 
+@Service
 public class LoginService {
 
     @Autowired

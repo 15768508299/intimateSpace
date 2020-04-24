@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.blove.space.mapper.SysJobpoMapper" >
+  <resultMap id="BaseResultMap" type="com.blove.space.model.SysJobpo" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="jobId" property="jobid" jdbcType="INTEGER" />
+    <result column="beanName" property="beanname" jdbcType="VARCHAR" />
+    <result column="methodName" property="methodname" jdbcType="VARCHAR" />
+    <result column="methodParams" property="methodparams" jdbcType="VARCHAR" />
+    <result column="cronExpression" property="cronexpression" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="jobStatus" property="jobstatus" jdbcType="TINYINT" />
+    <result column="createdAt" property="createdat" jdbcType="INTEGER" />
+    <result column="updatedAt" property="updatedat" jdbcType="INTEGER" />
+  </resultMap>
+</mapper>
